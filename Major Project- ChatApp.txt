@@ -1,0 +1,47 @@
+Major Project- ChatApp
+
+1.RegisterPage
+2.LoginPage
+3.HomePage{
+	2 sections{
+	1.search
+	2.chatSection
+}
+}
+
+requirement of TechStack
+
+1.express
+2.MongoDB
+3.ReactJS
+4.TailwindCss
+5.Websocket.io
+
+REFERAL APP
+
+
+
+3 PAGES {
+HOME 
+PRODUCT
+CART 
+MYACCOUNT
+}
+-SHOP{MENU}
+PRODUCT CARDS
+
+
+
+
+
+
+Todo kal ke liye
+
+nav bar
+Home
+Product
+Cart 
+Myaccount 
+page banana hai 
+
+kal ki date mai almonst frontend complete krna hai
