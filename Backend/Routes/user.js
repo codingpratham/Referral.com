@@ -9,7 +9,6 @@ const signupBody=zod.object({
     lastName:zod.string(),
     email:zod.string().email().min(5).max(255),
     password:zod.string().min(8).max(255),
-    confirmPassword:zod.string().min(8).max(255).ref('password')
 })
 router.post('/register',async(req,res)=>{
     try {
@@ -36,7 +35,10 @@ router.post('/register',async(req,res)=>{
             lastName:req.body.lastName,
             email:req.body.email,
             password:req.body.password,
-            confirmPassword:req.body.confirmPassword
+        })
+        await user.save()
+        res.json({
+            msg:"User registered successfully"
         })
 
     } catch (error) {
